@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./order-summary";
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  background: $primaryBlue url(/images/pattern-background-desktop.svg) no-repeat
+    top center;
+  margin: 0;
+  padding: 0;
+}
+*,
+:before,
+*:after {
+  box-sizing: border-box;
+}
+.container {
+  @include flexCenter();
+  height: 100vh;
+}

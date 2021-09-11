@@ -1,0 +1,60 @@
+.order-summary {
+  max-width: 450px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.order-summary picture {
+  display: block;
+  line-height: 0.7;
+}
+
+.order-summary .order-info {
+  padding: 3rem;
+  text-align: center;
+  background-color: white;
+}
+
+.order-summary .order-info h2 {
+  font-weight: 900;
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.order-summary .order-info p {
+  font-weight: 500;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff url(/images/pattern-background-desktop.svg) no-repeat top center;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */

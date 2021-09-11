@@ -1,0 +1,23 @@
+.order-summary {
+  max-width: 450px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  picture {
+    display: block;
+    line-height: 0.7;
+  }
+  .order-info {
+    padding: 3rem;
+    text-align: center;
+    background-color: $white;
+    h2 {
+      font-weight: 900;
+      font-size: 1.75em;
+      margin: 0;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+}
