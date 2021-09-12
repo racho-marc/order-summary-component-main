@@ -24,6 +24,69 @@
 
 .order-summary .order-info p {
   font-weight: 500;
+  line-height: 2;
+  color: #7280a7;
+}
+
+.order-summary .order-info .plan-info {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25em;
+}
+
+.order-summary .order-info .plan-info img {
+  margin-right: 1em;
+}
+
+.order-summary .order-info .plan-info .plan-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.order-summary .order-info .plan-info .plan-text strong {
+  display: block;
+}
+
+.order-summary .order-info .plan-info .plan-text span {
+  display: block;
+}
+
+.order-summary .order-info .plan-info a {
+  justify-self: flex-end;
+}
+
+.order-summary .order-info .btn {
+  display: block;
+  margin-top: 1em;
+  border-radius: 11px;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.938em;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.order-summary .order-info .btn-primary {
+  background-color: #3829e0;
+  color: white;
+  -webkit-box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
+          box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.order-summary .order-info .btn-primary:hover, .order-summary .order-info .btn-primary:focus {
+  background-color: #756af1;
 }
 
 html {
