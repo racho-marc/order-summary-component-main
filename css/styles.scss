@@ -1,17 +1,8 @@
 @import "./variables";
+@import "./mixins";
 @import "./order-summary";
 
-@mixin flexCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-
-
-html {
-    font-size: 16px;
-}
 
 body {
     font-size: 1rem;
@@ -28,24 +19,40 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    @include flexCenter();
-    height: 100vh;
+a {
+    color: $primaryBrightBlue;
+    @include transitionBtn();
+
+    &:hover,
+    &:focus {
+        color: $neutralBlue;
+    }
+
 }
 
-a:hover,
-a:focus {
-    transition: 0.3s ease-in;
+a:focus-visible {
+    outline: 2px solid green;
+}
+
+button {
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: 2px solid green;
+    }
+}
+
+
+.container {
+    @include flexCenter();
+    min-height: 100vh;
+    padding: 1em 0;
 }
 
 .attribution {
     text-align: center;
     padding: 1em 2%;
     font-weight: 0.875em;
-
-    a {
-        color: $primaryBrightBlue
-    }
 }
 
 @media screen and (min-width: 460px) {

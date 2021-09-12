@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./mixins";
+
 @mixin borderRadius($radius) {
     border-radius: $radius;
     position: relative;
@@ -9,111 +12,129 @@
     box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.25);
     @include borderRadius(20px);
 
-    picture {
-        display: block;
-        line-height: 0.7;
+}
+
+.img-container {
+    display: block;
+    line-height: 0.7;
+}
+
+.order-info {
+    padding: 1.875em 1.563em;
+    text-align: center;
+    background-color: $white;
+
+    h1 {
+        font-weight: 900;
+        font-size: 1.75em;
+        margin: 0;
     }
 
-    .order-info {
-        padding: 1.875em 1.563em;
-        text-align: center;
-        background-color: $white;
+    p {
+        font-weight: 500;
+        line-height: 1.625em;
+        margin: 1.5em 0;
+        color: $neutralDesatBlue;
+    }
 
-        h1 {
-            font-weight: 900;
-            font-size: 1.75em;
-            margin: 0;
-        }
+}
 
-        p {
-            font-weight: 500;
-            line-height: 1.625em;
-            margin: 1.5em 0;
-            color: $neutralDesatBlue;
-        }
+.plan-info {
+    @include borderRadius(20px);
+    background-color: $neutralPaleBlue;
+    display: flex;
+    align-items: center;
+    padding: 1.25em;
+    margin-bottom: 2em;
 
-        .plan-info {
-            @include borderRadius(20px);
-            background-color: $neutralPaleBlue;
-            display: flex;
-            align-items: center;
-            padding: 1.25em;
-            margin-bottom: 2em;
+    .info-left {
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+        text-align: left;
+    }
 
-            .info-left {
-                display: flex;
-                flex: 1 1 auto;
-            }
+    img {
+        margin-right: 1em;
+    }
 
-            img {
-                margin-right: 1em;
-            }
+    button {
+        background-color: transparent;
+        border: none;
+        color: $primaryBrightBlue;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 0.875em;
+        text-decoration: underline;
 
-            .plan-text {
-                flex: 0 1 auto;
-
-                strong {
-                    display: block;
-                }
-
-                span {
-                    display: block;
-                    color: $neutralDesatBlue;
-                }
-            }
-
-            a {
-                font-weight: bold;
-                font-size: 0.875em;
-                color: $primaryBrightBlue;
-
-                &:hover,
-                &:focus {
-                    text-decoration: none;
-                    color: $neutralBlue;
-                }
-            }
-
-        }
-
-        .btn {
-            display: block;
-            margin-top: 1em;
-            @include borderRadius(11px);
+        &:hover,
+        &:focus {
             text-decoration: none;
-            font-weight: 900;
-            font-size: 0.938em;
-            padding: 1em 1em;
-            text-align: center;
-            color: $neutralDesatBlue;
-
-            &:hover,
-            &:focus {
-                color: $neutralBlue;
-            }
+            color: $neutralBlue;
         }
 
-        .btn-primary {
-            background-color: $primaryBrightBlue;
-            color: $white;
-            box-shadow: 0 20px 20px hsla(245, 81%, 88%, 0.19);
-
-            &:hover,
-            &:focus {
-                background-color: $primaryBrightBlueHover;
-                color: $white;
-            }
+        &:focus-visible {
+            outline: 2px solid green;
         }
+    }
 
+}
+
+.plan-text {
+    flex: 0 1 auto;
+
+    h2 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    p {
+        display: block;
+        color: $neutralDesatBlue;
+        margin: 0;
+        font-weight: 500;
+    }
+}
+
+.btn {
+    display: block;
+    margin-top: 1em;
+    @include borderRadius(11px);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.938em;
+    padding: 1em 1em;
+    text-align: center;
+    color: $neutralDesatBlue;
+    border: none;
+    width: 100%;
+    @include transitionBtn();
+
+    &:hover,
+    &:focus {
+        color: $neutralBlue;
+    }
+}
+
+.btn-primary {
+    background-color: $primaryBrightBlue;
+    color: $white;
+    box-shadow: 0 20px 20px hsla(245, 81%, 88%, 0.19);
+
+    &:hover,
+    &:focus {
+        background-color: $primaryBrightBlueHover;
+        color: $white;
     }
 }
 
 @media screen and (min-width: 460px) {
     .order-summary {
         max-width: 450px;
+    }
 
-        .order-info {
-            padding: 3rem;
-        }
+    .order-info {
+        padding: 3rem;
     }
 }

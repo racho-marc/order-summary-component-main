@@ -1,7 +1,6 @@
 .order-summary {
   max-width: 95%;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -17,13 +16,11 @@
   text-align: center;
   background-color: white;
 }
-
 .order-info h1 {
   font-weight: 900;
   font-size: 1.75em;
   margin: 0;
 }
-
 .order-info p {
   font-weight: 500;
   line-height: 1.625em;
@@ -36,33 +33,20 @@
   position: relative;
   overflow: hidden;
   background-color: #f5f7ff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1.25em;
   margin-bottom: 2em;
 }
-
 .plan-info .info-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 1 0 auto;
+  align-items: center;
   text-align: left;
 }
-
 .plan-info img {
   margin-right: 1em;
 }
-
 .plan-info button {
   background-color: transparent;
   border: none;
@@ -72,28 +56,22 @@
   font-size: 0.875em;
   text-decoration: underline;
 }
-
 .plan-info button:hover, .plan-info button:focus {
   text-decoration: none;
   color: #1f2f56;
 }
-
 .plan-info button:focus-visible {
   outline: 2px solid green;
 }
 
 .plan-text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  flex: 0 1 auto;
 }
-
 .plan-text h2 {
   margin: 0;
   font-size: 1em;
   font-weight: 900;
 }
-
 .plan-text p {
   display: block;
   color: #7280a7;
@@ -115,10 +93,8 @@
   color: #7280a7;
   border: none;
   width: 100%;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
-
 .btn:hover, .btn:focus {
   color: #1f2f56;
 }
@@ -126,10 +102,8 @@
 .btn-primary {
   background-color: #3829e0;
   color: white;
-  -webkit-box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
-          box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
+  box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
 }
-
 .btn-primary:hover, .btn-primary:focus {
   background-color: #756af1;
   color: white;
@@ -139,72 +113,8 @@
   .order-summary {
     max-width: 450px;
   }
+
   .order-info {
     padding: 3rem;
   }
 }
-
-body {
-  font-size: 1rem;
-  font-family: "Red Hat Display", sans-serif;
-  background: #e0e8ff url(/images/pattern-background-mobile.svg) no-repeat top center;
-  background-size: contain;
-  margin: 0;
-  padding: 0;
-}
-
-*,
-:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  color: #3829e0;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
-a:hover, a:focus {
-  color: #1f2f56;
-}
-
-a:focus-visible {
-  outline: 2px solid green;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:focus-visible {
-  outline: 2px solid green;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh;
-  padding: 1em 0;
-}
-
-.attribution {
-  text-align: center;
-  padding: 1em 2%;
-  font-weight: 0.875em;
-}
-
-@media screen and (min-width: 460px) {
-  body {
-    background-image: url(/images/pattern-background-desktop.svg);
-  }
-}
-/*# sourceMappingURL=styles.css.map */
