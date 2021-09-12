@@ -1,90 +1,62 @@
 .order-summary {
   max-width: 95%;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   position: relative;
   overflow: hidden;
 }
-
 .order-summary picture {
   display: block;
   line-height: 0.7;
 }
-
 .order-summary .order-info {
   padding: 1.875em 1.563em;
   text-align: center;
   background-color: white;
 }
-
 .order-summary .order-info h2 {
   font-weight: 900;
   font-size: 1.75em;
   margin: 0;
 }
-
 .order-summary .order-info p {
   font-weight: 500;
-  line-height: 1.625em;
-  margin: 1.5em 0;
+  line-height: 2;
   color: #7280a7;
 }
-
 .order-summary .order-info .plan-info {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
   background-color: #f5f7ff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1.25em;
-  margin-bottom: 2em;
 }
-
 .order-summary .order-info .plan-info .info-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-
 .order-summary .order-info .plan-info img {
   margin-right: 1em;
 }
-
 .order-summary .order-info .plan-info .plan-text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  flex: 0 1 auto;
 }
-
 .order-summary .order-info .plan-info .plan-text strong {
   display: block;
 }
-
 .order-summary .order-info .plan-info .plan-text span {
   display: block;
-  color: #7280a7;
 }
-
 .order-summary .order-info .plan-info a {
   font-weight: bold;
   font-size: 0.875em;
   color: #3829e0;
 }
-
 .order-summary .order-info .plan-info a:hover, .order-summary .order-info .plan-info a:focus {
   text-decoration: none;
   color: #1f2f56;
 }
-
 .order-summary .order-info .btn {
   display: block;
   margin-top: 1em;
@@ -98,18 +70,14 @@
   text-align: center;
   color: #7280a7;
 }
-
 .order-summary .order-info .btn:hover, .order-summary .order-info .btn:focus {
   color: #1f2f56;
 }
-
 .order-summary .order-info .btn-primary {
   background-color: #3829e0;
   color: white;
-  -webkit-box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
-          box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
+  box-shadow: 0 20px 20px rgba(204, 200, 249, 0.19);
 }
-
 .order-summary .order-info .btn-primary:hover, .order-summary .order-info .btn-primary:focus {
   background-color: #756af1;
   color: white;
@@ -123,7 +91,6 @@
     padding: 3rem;
   }
 }
-
 html {
   font-size: 16px;
 }
@@ -140,26 +107,18 @@ body {
 *,
 :before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
 a:hover,
 a:focus {
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 
@@ -168,7 +127,6 @@ a:focus {
   padding: 1em 2%;
   font-weight: 0.875em;
 }
-
 .attribution a {
   color: #3829e0;
 }
@@ -178,4 +136,3 @@ a:focus {
     background-image: url(/images/pattern-background-desktop.svg);
   }
 }
-/*# sourceMappingURL=styles.css.map */

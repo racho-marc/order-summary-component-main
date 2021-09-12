@@ -16,7 +16,8 @@ html {
 body {
     font-size: 1rem;
     font-family: "Red Hat Display", sans-serif;
-    background: $primaryBlue url(/images/pattern-background-desktop.svg) no-repeat top center;
+    background: $primaryBlue url(/images/pattern-background-mobile.svg) no-repeat top center;
+    background-size: contain;
     margin: 0;
     padding: 0;
 }
@@ -30,4 +31,26 @@ body {
 .container {
     @include flexCenter();
     height: 100vh;
+}
+
+a:hover,
+a:focus {
+    transition: 0.3s ease-in;
+}
+
+.attribution {
+    text-align: center;
+    padding: 1em 2%;
+    font-weight: 0.875em;
+
+    a {
+        color: $primaryBrightBlue
+    }
+}
+
+@media screen and (min-width: 460px) {
+    body {
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
+
 }
